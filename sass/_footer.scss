@@ -1,0 +1,174 @@
+.footer {
+    height: 100vh;
+    width: auto;
+
+}
+
+.footer-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+
+
+}
+
+.svg-file {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40rem;
+
+    &--1 {
+        position: absolute;
+        right: 110rem;
+    }
+}
+
+.top-order {
+    display: flex;
+    flex-direction: row;
+    gap: 22rem;
+    font-size: 1.9rem;
+    transform: translateX(74px);
+    font-weight: 600;
+
+    &--1 {
+        transform: translateX(53px);
+    }
+
+    &--2 {
+        transform: translateX(13px);
+    }
+
+    &--3 {
+        transform: translateX(12px); 
+    }
+}
+
+
+.order-divider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15rem;
+    padding: auto;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 2rem;
+}
+
+.order-list0,
+.order-list1,
+.order-list2,
+.order-list3,
+.order-list4 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.ulli {
+    font-size: 2rem;
+    transform: translateY(-34px);
+    font-weight: 700;
+}
+
+.ulle {
+    font-size: 2.5rem;
+    font-weight: 800;
+    transform: translateY(-40px);
+}
+
+.select-divilder {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 18.3rem;
+}
+
+.select {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    cursor: pointer;
+    
+
+    
+}
+
+.SelectElement {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.blockchain {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+
+.blockchain-p {
+    font-size: 1.4rem;
+    color: black;
+    font-weight: 500;
+}
+
+.footer-pic {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+
+}
+
+.new-p {
+
+    &--1 {
+        font-size: 1.5rem;
+        color: black;
+        font-weight: 400;
+
+    }
+}
+
+.note {
+    color: blue;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.footer-img {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    cursor: pointer;
+
+    &--1 {
+        height: 100%;
+        width: 28%;
+        transform: translate(10px, -32px);
+    }
+
+    &--2 {
+        height: 100%;
+        width: 28%;
+        transform: translate(10px, -32px);
+    }
+
+}
+
+
+
+
+
+
+
+
