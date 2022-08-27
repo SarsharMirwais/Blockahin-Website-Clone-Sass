@@ -2,7 +2,15 @@
     background: rgb(19,19,19);
     background: linear-gradient(129deg, rgba(19,19,19,0.8883928571428571) 37%, rgba(227,64,5,0.5298494397759104) 100%, rgba(235,8,8,1) 100%);
     height: 100vh;
-    width: auto;
+    max-width: 100%;
+    width: 100%;
+
+    @media screen and (max-width: 768px) {
+        height: 90vh;
+        max-width: 100%;
+        width: 100%;
+
+    }
 
 
     &__elements {
@@ -23,6 +31,14 @@
     flex-direction: row;
     gap: 3rem;
     align-items: center;
+
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 1rem;
+        padding-top: 6.5rem;
+    }
 
     &--svg {
         border-radius: 4px;
@@ -48,6 +64,8 @@
     padding: 0px 0.75rem;
     margin-right: 0.5rem;
     color: white;
+
+    
 }
 
 .header-btn {
@@ -55,6 +73,10 @@
     flex-direction: row;
     gap: 4rem;
     align-items: center;
+
+    @media screen and (max-width: 768px) {
+        gap: 1rem;
+    }
     
     &--bt1 {
         background: none rgba(255, 255, 255, 0.1);
@@ -88,16 +110,9 @@
     list-style: none;
     cursor: pointer;
 
-    &--1 {
-
-
-        &:hover {
-            background-color: rgba(10, 10, 10, 0.1);
-            height: 1rem;
-            width: 3rem;
-            overflow: hidden;
-
-        }
+    @media screen and (max-width: 768px) {
+        visibility: hidden;
+        opacity: 0;
     }
 
     
@@ -149,6 +164,13 @@
     padding-top: 10rem;
     padding-left: 16rem;
 
+    @media screen and (max-width: 768px) {
+        gap: 2rem;
+        padding-left: 3rem;
+        padding-top: 14rem;
+        padding-bottom: 4rem;
+    }
+
 
     
 
@@ -161,11 +183,21 @@
     gap: 20px;
     max-width: 72rem;
 
+    @media screen and (max-width: 768px) {
+        padding-bottom: 4rem;
+    }
+
     &--h2 {
         font-weight: 600;
         color: white;
         font-size: 5.2rem;
         line-height: 6.625rem;
+
+        @media screen and (max-width: 768px) {
+            font-weight: 600;
+            font-size: 2.6rem;
+            line-height: 3rem;
+        }
 
     }
 
@@ -174,12 +206,22 @@
         font-size: 2.5rem;
         font-weight: 500;
         line-height: 3.125rem;
+
+        @media screen and (max-width: 768px) {
+            font-size: 1.8rem;
+            font-weight: 500;
+            line-height: 2rem;
+        }
     }
 }
 
 .btn_divider {
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: 768px) {
+        display: inline-block;
+    }
 
 }
 
@@ -189,10 +231,14 @@
     flex-direction: row;
     gap: 1rem;
     align-items: center;
-    color: white;
-    font-size: 1.5rem;
-    font-weight: 400px;
-    text-decoration: none;
+
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
 
     &--le1 {
         display: inline-flex;
@@ -212,6 +258,10 @@
         white-space: nowrap;
         background-color: rgb(12, 108, 242);
         color: rgb(255, 255, 255);
+
+        @media screen and (max-width: 768px) {
+            padding: 0.8rem 12.15rem;
+        }
 
 
         &:hover {
@@ -239,6 +289,10 @@
         color: rgb(18, 29, 51);
         background: rgb(255, 255, 255);
 
+        @media screen and (max-width: 768px) {
+            padding: 0.8rem 12.15rem;
+        }
+
         &:hover {
             color: rgb(18, 29, 51);
             background: rgb(204, 202, 202);
@@ -247,33 +301,73 @@
 }
 
 .button-animate {
-    padding-right: 3rem;
     
 
     &--submit {
-        height: 5rem;
-        width: 5rem;
-        border-radius: 5rem;
-        background-color: blue;
+        height: 8rem;
+        width: 8rem;
+        border-radius: 8rem;
+        background-color: rgb(11, 113, 230);
         cursor: pointer;
         display: inline-flex;
         top: 55rem;
-        right: 5rem;
+        right: 9rem;
         position: fixed;
+        border: none;
+        list-style-type: none;
+        z-index: 9999999;
+
+        @media screen and (max-width: 768px) {
+            position: fixed;
+            top: 50rem;
+            right: 7rem;
+        }
     }
 
-    &--img {
-        padding-top: 9px;
-        padding-left: 0px;
-    }
 
-    &--p {
-        width: 0px;
-        visibility: hidden;
-        opacity: 0;
-        animation: 6s ease 1s 1 normal none running chgIpk;
-        transition: all 0.3s ease 1.5s;
+    &:hover {
+        height: 8rem;
+        width: 20rem;
+        border-radius: 8rem;
+        background-color: rgb(11, 113, 230);
+        cursor: pointer;
+        display: inline-flex;
+        top: 55rem;
+        right: 9rem;
+        position: fixed;
+        border: none;
+        list-style-type: none;
     }
 }   
 
+.animate-img {
+    transform: translate(17px, 21px);
 
+
+    &:hover {
+        transform: translate(-100px, 19px);
+        animation: 0.5s ease 0.5s 0.5 normal none running chgIpk;
+        transition: all 0.3s ease 0.5s;
+       
+    }
+}
+
+
+.button-p {
+    width: 0px;
+    visibility: hidden;
+    opacity: 0;
+    animation: 6s ease 1s 1 normal none running chgIpk;
+    transition: all 0.3s ease 1.5s;
+
+    &:hover {
+
+        font-size: 2rem;
+        color: black;
+        visibility: inherit;
+        opacity: 100;
+        animation: 6s ease 1s 1 normal none running chgIpk;
+        transition: all 0.3s ease 1.5s;
+
+    }
+}
