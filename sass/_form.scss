@@ -1,6 +1,7 @@
 .form {
     height: 100vh;
     max-width: 100%;
+    
 }
 
 
@@ -12,6 +13,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border-radius: 4%;
 
 }
 
@@ -64,8 +66,14 @@
             width: 115%;
             transform: translateX(-46px);
         }
-    }
 
+        @media screen and (max-width: 480px) {
+            height: 48%;
+            margin-top: 17rem;
+            width: 28rem;
+            transform: translateX(-268px);
+        }
+    }
     &--wallet {
         height: 85%;
         width: 45%;
@@ -127,6 +135,38 @@
             background-color: rgb(34, 2, 49);
             color: rgb(255, 255, 255);
         }
+    }
+}
+
+.svg-turn {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    color: #840fbe;
+    visibility: hidden;
+    opacity: 0;
+
+
+    @media screen and (max-width: 768px) {
+        visibility: visible;
+        opacity: 1;
+        position: absolute;
+        top: 108rem;
+        left: 7rem;
+    }
+
+    @media screen and (max-width: 480px) {
+        visibility: visible;
+        opacity: 1;
+        position: absolute;
+        top: 108rem;
+        left: 7rem;
+    }
+
+    &--1 {
+        color: #840fbe;
+        border: 1px solid #840fbe;
+        border-radius: 10%;
     }
 }
 

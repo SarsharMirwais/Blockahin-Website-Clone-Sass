@@ -12,6 +12,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border-radius: 4%;
 
 }
 
@@ -65,6 +66,13 @@
             margin-top: 18rem;
             width: 115%;
             transform: translateX(-46px);
+        }
+
+        @media screen and (max-width: 480px) {
+            height: 56%;
+            margin-top: 17rem;
+            width: 26rem;
+            transform: translateX(-241px);
         }
     }
 
@@ -281,5 +289,38 @@
             line-height: 3rem;
         }
 
+    }
+}
+
+
+.svg-turn4 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    color: orange;
+    visibility: hidden;
+    opacity: 0;
+
+
+    @media screen and (max-width: 768px) {
+        visibility: visible;
+        opacity: 1;
+        position: absolute;
+        top: 315rem;
+        left: 2rem;
+    }
+
+    @media screen and (max-width: 480px) {
+        visibility: visible;
+        opacity: 1;
+        position: absolute;
+        top: 315rem;
+        left: 2rem;
+    }
+
+    &--1 {
+        color: orange;
+        border: 1px solid orange;
+        border-radius: 10%;
     }
 }

@@ -12,6 +12,13 @@
 
     }
 
+    @media screen and (max-width: 480px) {
+        height: 90vh;
+        max-width: 100%;
+        width: 100%;
+
+    }
+
 
     &__elements {
         height: 4rem;
@@ -65,7 +72,40 @@
     margin-right: 0.5rem;
     color: white;
 
+    @media screen and (max-width: 768px) {
+        visibility: hidden;
+        opacity: 0;
+    }
+
     
+}
+
+.svg-right {
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+
+    @media screen and (max-width: 768px) {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    @media screen and (max-width: 480px) {
+        color: white;
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(-60px);
+    }
+}
+
+.rigth-btn {
+    
+
+    @media screen and (max-width: 480px) {
+        color: white;
+        visibility: visible;
+        opacity: 1;
+    }
 }
 
 .header-btn {
@@ -76,6 +116,11 @@
 
     @media screen and (max-width: 768px) {
         gap: 1rem;
+    }
+
+    @media screen and (max-width: 480px) {
+        visibility: hidden;
+        opacity: 0;
     }
     
     &--bt1 {
@@ -263,6 +308,11 @@
             padding: 0.8rem 12.15rem;
         }
 
+        @media screen and (max-width: 480px) {
+            padding: 0.8rem 6.15rem;
+        }
+
+
 
         &:hover {
             background-color: rgb(11, 40, 80);
@@ -293,6 +343,10 @@
             padding: 0.8rem 12.15rem;
         }
 
+        @media screen and (max-width: 480px) {
+            padding: 0.9rem 7.15rem;
+        }
+
         &:hover {
             color: rgb(18, 29, 51);
             background: rgb(204, 202, 202);
@@ -304,9 +358,9 @@
     
 
     &--submit {
-        height: 8rem;
-        width: 8rem;
-        border-radius: 8rem;
+        height: 7rem;
+        width: 7rem;
+        border-radius: 7rem;
         background-color: rgb(11, 113, 230);
         cursor: pointer;
         display: inline-flex;
@@ -318,17 +372,18 @@
         z-index: 9999999;
 
         @media screen and (max-width: 768px) {
-            position: fixed;
             top: 50rem;
             right: 7rem;
+
+            
         }
     }
 
 
     &:hover {
-        height: 8rem;
+        height: 7rem;
         width: 20rem;
-        border-radius: 8rem;
+        border-radius: 7rem;
         background-color: rgb(11, 113, 230);
         cursor: pointer;
         display: inline-flex;
@@ -337,6 +392,14 @@
         position: fixed;
         border: none;
         list-style-type: none;
+
+        @media screen and (max-width: 768px) {
+            top: 50rem;
+            right: 7rem;
+        }
+
+
+
     }
 }   
 
