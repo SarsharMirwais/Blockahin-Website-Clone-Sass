@@ -30,6 +30,7 @@
         padding-top: 8rem;
         padding-bottom: 4rem;
         border-bottom: 1px solid gray;
+        background-color: rgba(51, 49, 49, 0.445);
     }
 }
 
@@ -207,7 +208,7 @@
     flex-direction: column;
     gap: 4rem;
     padding-top: 10rem;
-    padding-left: 16rem;
+    padding-left: 20rem;
 
     @media screen and (max-width: 768px) {
         gap: 2rem;
@@ -404,7 +405,7 @@
 }   
 
 .animate-img {
-    transform: translate(17px, 21px);
+    transform: translate(10px, 15px);
 
 
     &:hover {
@@ -418,8 +419,7 @@
 
 .button-p {
     width: 0px;
-    visibility: hidden;
-    opacity: 0;
+    display: none;
     animation: 6s ease 1s 1 normal none running chgIpk;
     transition: all 0.3s ease 1.5s;
 

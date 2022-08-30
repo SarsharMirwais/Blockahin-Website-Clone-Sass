@@ -1,0 +1,209 @@
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    left: 20rem;
+    top: 62rem;
+    z-index: 99999999999999999;
+}
+
+.crad-1,
+.crad-2,
+.crad-3,
+.crad-4 {
+
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    color: rgb(18, 29, 51);
+    min-width: 0px;
+    padding: 1.25rem;
+    transition: background-image 0.6s ease 0s;
+    height: 13rem;
+    min-width: 24rem;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+
+    &:hover {
+        background-image: linear-gradient(rgb(248, 245, 245), rgb(241, 238, 238));
+    }
+
+    
+}
+
+.card-btc1,
+.card-btc2,
+.card-btc3,
+.card-btc4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+
+    
+}
+
+.card-btcs1,
+.card-btcs2,
+.card-btcs3,
+.card-btcs4, {
+
+
+    &--mg {
+        height: 2.5rem;
+        width: 2.5rem;
+        cursor: pointer;
+
+    }
+}
+
+.buttons-btc1,
+.buttons-btc2,
+.buttons-btc3,
+.buttons-btc4 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    cursor: pointer;
+
+    &--1 {
+        height: 24px;
+        width: 48px;
+        border: none;
+        border-radius: 7px;
+        font-size: 15px;
+        background-color: #e5d5ec;
+        color: #840fbe;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #dacce0;
+        }
+    }
+
+    &--2 {
+        height: 24px;
+        width: 48px;
+        border: none;
+        border-radius: 7px;
+        font-size: 15px;
+        background-color: rgb(223, 240, 217);
+        color: rgb(77, 216, 22);
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgb(200, 188, 206);
+        }
+    }
+}
+
+
+.paragraph-btc1,
+.paragraph-btc2,
+.paragraph-btc3,
+.paragraph-btc4 {
+
+    &--1 {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: black;
+    }
+
+    &--2 {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: black;
+    }
+}
+
+.PSAN1-1,
+.PSAN1-2,
+.PSAN1-3,
+.PSAN1-4 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: rgb(167, 170, 167);
+}
+
+.PSAN2-1,
+.PSAN2-2,
+.PSAN2-3,
+.PSAN2-4 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: rgb(63, 250, 7);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.a1 {
+    display: flex;
+    position: absolute;
+    left: 112rem;
+    top: 76rem;
+
+}
+
+.link {
+    display: inline-flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    white-space: nowrap;
+    background: none;
+    border: none;
+    border-radius: 0px;
+    color: rgb(18, 29, 51);
+    padding: 0px;
+    font-size: 0.875rem;
+    line-height: 143%;
+}
+
+
+
+
+
