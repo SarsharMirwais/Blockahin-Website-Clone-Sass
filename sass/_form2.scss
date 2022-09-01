@@ -15,6 +15,18 @@
     justify-content: space-between;
     border-radius: 4%;
 
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    @media screen and (max-width: 550px) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
 }
 
 
@@ -28,11 +40,19 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 70px;
     padding: 5px;
 
     @media screen and (max-width: 768px) {
-        transform: translateX(-225px);
+        padding-left: 60px;
+    }
+
+    @media screen and (max-width: 550px) {
+        padding-left: 60px;
+    }
+
+    @media screen and (max-width: 414px) {
+        padding-left: 202px;
     }
 
     &--1 {
@@ -44,6 +64,8 @@
         border-radius: 8%;
         padding: 5px;
         box-shadow: 2px black;
+
+
     }
     
 
@@ -58,7 +80,6 @@
 
 .wallet-img2 {
     padding-top: 5rem;
-    float: right;
     
     &--mobile {
         height: 84%;
@@ -66,16 +87,39 @@
         width: 100%;
 
         @media screen and (max-width: 768px) {
-            height: 46%;
-            margin-top: 16rem;
-            width: 133%;
+            height: 42%;
+            margin-top: 19rem;
+            width: 26rem;
+            transform: translateX(64px);
+            position: absolute;
+            top: 140rem;
+            right: 7rem;
+            z-index: 2;
             
         }
+
+        @media screen and (max-width: 550px) {
+            height: 42%;
+            margin-top: 19rem;
+            width: 26rem;
+            transform: translateX(64px);
+            position: absolute;
+            top: 140rem;
+            right: 7rem;
+            z-index: 2;
+        }
+
         @media screen and (max-width: 480px) {
             height: 48%;
             margin-top: 17rem;
             width: 28rem;
-            transform: translateX(70px);
+            
+        }
+
+        @media screen and (max-width: 414px) {
+            height: 41%;
+            margin-top: 16rem;
+            width: 23rem;
             
         }
     }
@@ -91,9 +135,15 @@
     text-decoration: none;
 
     @media screen and (max-width: 768px) {
-        padding-top: 12rem;
         padding-left: 68px;
-        transform: translateX(-282px);
+    }
+
+    @media screen and (max-width: 550px) {
+        padding-left: 68px;
+    }
+
+    @media screen and (max-width: 414px) {
+        padding-left: 202px;
     }
     
 
@@ -136,6 +186,14 @@
     gap: 0.9rem;
     align-items: flex-start;
     padding-right: 80px;
+
+    @media screen and (max-width: 768px) {
+        padding-left: 60px;
+    }
+
+    @media screen and (max-width: 550px) {
+        padding-left: 60px;
+    }
     
 
     &--1 {
@@ -158,16 +216,35 @@
         @media screen and (max-width: 768px) {
             background-color: #eeeeee;
             border: none;
-            position: absolute;
-            top: 182rem;
-            transform: translateX(-227px);
+            background-color: #eeeeee;
+            border: none; 
+            padding: 1rem 6rem 1rem 1rem;
 
             
         }
 
+        @media screen and (max-width: 550px) {
+            background-color: #eeeeee;
+            border: none; 
+            padding: 1rem 6rem 1rem 1rem;
+        }
+
+        @media screen and (max-width: 550px) {
+            background-color: #eeeeee;
+            border: none; 
+            padding: 1rem 6rem 1rem 1rem;
+        }
+
         @media screen and (max-width: 480px) {
             font-size: 1.5rem;
-        width: 42rem;
+            width: 42rem;
+            padding-left: 143px;
+        }
+
+        @media screen and (max-width: 414px) {
+            font-size: 1.5rem;
+            width: 42rem;
+            padding-left: 143px;
         }
         
     }
@@ -189,9 +266,11 @@
         border: 1px solid rgb(222, 216, 253);
 
         @media screen and (max-width: 768px) {
-            visibility: hidden;
-            opacity: 0;
-            overflow: hidden;
+            display: none;
+        }
+
+        @media screen and (max-width: 550px) {
+            display: none;
         }
     }
 
@@ -212,9 +291,11 @@
         border: 1px solid rgb(222, 216, 253);
 
         @media screen and (max-width: 768px) {
-            visibility: hidden;
-            opacity: 0;
-            overflow: hidden;
+            display: none;
+        }
+
+        @media screen and (max-width: 550px) {
+            display: none;
         }
     }
 
@@ -235,9 +316,11 @@
         border: 1px solid rgb(222, 216, 253);
 
         @media screen and (max-width: 768px) {
-            visibility: hidden;
-            opacity: 0;
-            overflow: hidden;
+            display: none;
+        }
+
+        @media screen and (max-width: 550px) {
+            display: none;
         }
     }
 
@@ -258,9 +341,11 @@
         border: 1px solid rgb(222, 216, 253);
 
         @media screen and (max-width: 768px) {
-            visibility: hidden;
-            opacity: 0;
-            overflow: hidden;
+            display: none;
+        }
+
+        @media screen and (max-width: 550px) {
+            display: none;
         }
     }
 }
@@ -270,8 +355,21 @@
     max-width: 50rem;
     color: rgb(8, 163, 235);
 
+
     @media screen and (max-width: 768px) {
-        transform: translateX(-225px);
+        width: 47rem;
+        padding-bottom: 20rem;
+        padding-left: 60px;
+    }
+
+    @media screen and (max-width: 550px) {
+        width: 47rem;
+        padding-bottom: 20rem;
+        padding-left: 60px;
+    }
+
+    @media screen and (max-width: 414px) {
+        padding-left: 202px;
     }
 
     &--2 {
@@ -288,28 +386,34 @@
 }
 
 .svg-turn2 {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    color: blue;
-    visibility: hidden;
-    opacity: 0;
-
+    display: none;
 
     @media screen and (max-width: 768px) {
-        visibility: visible;
-        opacity: 1;
-        position: absolute;
-        top: 188rem;
-        left: 15rem;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        padding-left: 68px;
+    }
+
+    @media screen and (max-width: 550px) {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        padding-left: 68px;
     }
 
     @media screen and (max-width: 480px) {
-        visibility: visible;
-        opacity: 1;
-        position: absolute;
-        top: 187.8rem;
-        left: 20rem;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        padding-left: 202px;
+    }
+
+    @media screen and (max-width: 414px) {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        padding-left: 202px;
     }
 
     &--1 {

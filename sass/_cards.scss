@@ -3,27 +3,80 @@
     flex-direction: row;
     justify-content: center;
     position: absolute;
-    align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 2rem;
-    left: 20rem;
-    top: 62rem;
-    z-index: 99999999999999999;
+    left: 25rem;
+    top: -19rem;
+
+    @media screen and (max-width: 1500px) {
+        left: 23rem;
+        top: -19rem;
+        
+    }
+
+    @media screen and (max-width: 1100px) {
+        left: 5rem;
+        top: -19rem;
+        flex-wrap: nowrap;
+        
+    }
+
+    @media screen and (max-width: 768px) {
+        top: -19rem;
+        flex-wrap: nowrap;
+        overflow-y: visible;
+        overflow-x: auto;
+        max-width: calc(100% - -3rem);
+        padding-bottom: 5rem;
+        padding-left: 33rem;
+        margin-left: -3rem;
+        
+    }
+
+    @media screen and (max-width: 550px) {
+        top: -19rem;
+        flex-wrap: nowrap;
+        overflow-y: visible;
+        overflow-x: auto;
+        max-width: calc(100% - -4rem);
+        padding-bottom: 5rem;
+        padding-left: 48rem;
+        margin-left: -5rem;
+    }
+
+    @media screen and (max-width: 480px) {
+        top: -19rem;
+        flex-wrap: nowrap;
+        overflow-y: visible;
+        overflow-x: auto;
+        max-width: calc(100% - -3rem);
+        padding-bottom: 5rem;
+        padding-left: 52rem;
+        margin-left: -3rem;
+    }
+
+    @media screen and (max-width: 414px) {
+        top: -19rem;
+        flex-wrap: nowrap;
+        overflow-y: visible;
+        overflow-x: auto;
+        max-width: calc(100% - -3rem);
+        padding-bottom: 5rem;
+        padding-left: 52rem;
+        margin-left: -3rem;
+    }
 }
 
-.crad-1,
-.crad-2,
-.crad-3,
-.crad-4 {
+.crad-1 {
 
     background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
     border-radius: 0.5rem;
-    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
     color: rgb(18, 29, 51);
     min-width: 0px;
     padding: 1.25rem;
     transition: background-image 0.6s ease 0s;
-    height: 13rem;
+    height: 12rem;
     min-width: 24rem;
     display: flex;
     flex-direction: column;
@@ -33,7 +86,64 @@
         background-image: linear-gradient(rgb(248, 245, 245), rgb(241, 238, 238));
     }
 
-    
+    @media screen and (max-width: 1200px) {
+
+    }
+}
+
+.crad-2 {
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+    border-radius: 0.5rem;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    color: rgb(18, 29, 51);
+    min-width: 0px;
+    padding: 1.25rem;
+    transition: background-image 0.6s ease 0s;
+    height: 12rem;
+    min-width: 24rem;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+
+    &:hover {
+        background-image: linear-gradient(rgb(248, 245, 245), rgb(241, 238, 238));
+    }
+
+    @media screen and (max-width: 1200px) {
+
+    }
+
+    @media screen and (max-width: 414px) {
+        
+    }
+}
+
+.crad-3,
+.crad-4 {
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+    border-radius: 0.5rem;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    color: rgb(18, 29, 51);
+    min-width: 0px;
+    padding: 1.25rem;
+    transition: background-image 0.6s ease 0s;
+    height: 12rem;
+    min-width: 24rem;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+
+    &:hover {
+        background-image: linear-gradient(rgb(248, 245, 245), rgb(241, 238, 238));
+    }
+
+    @media screen and (max-width: 550px) {
+        
+    }
+
+    @media screen and (max-width: 414px) {
+        
+    }
 }
 
 .card-btc1,
@@ -42,8 +152,7 @@
 .card-btc4 {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-between;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     cursor: pointer;
@@ -54,16 +163,19 @@
 .card-btcs1,
 .card-btcs2,
 .card-btcs3,
-.card-btcs4, {
-
+.card-btcs4 {
 
     &--mg {
         height: 2.5rem;
         width: 2.5rem;
         cursor: pointer;
-
     }
+
 }
+
+
+    
+
 
 .buttons-btc1,
 .buttons-btc2,
@@ -112,14 +224,14 @@
 .paragraph-btc4 {
 
     &--1 {
-        font-size: 1.6rem;
-        font-weight: 400;
+        font-size: 1.4rem;
+        font-weight: 500;
         color: black;
     }
 
     &--2 {
-        font-size: 1.6rem;
-        font-weight: 400;
+        font-size: 1.4rem;
+        font-weight: 500;
         color: black;
     }
 }
@@ -128,8 +240,8 @@
 .PSAN1-2,
 .PSAN1-3,
 .PSAN1-4 {
-    font-size: 1.6rem;
-    font-weight: 400;
+    font-size: 1.4rem;
+    font-weight: 500;
     color: rgb(167, 170, 167);
 }
 
@@ -137,57 +249,15 @@
 .PSAN2-2,
 .PSAN2-3,
 .PSAN2-4 {
-    font-size: 1.6rem;
-    font-weight: 400;
+    font-size: 1.4rem;
+    font-weight: 500;
     color: rgb(63, 250, 7);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .a1 {
     display: flex;
-    position: absolute;
-    left: 112rem;
-    top: 76rem;
-
-}
-
-.link {
-    display: inline-flex;
-    -webkit-box-pack: center;
+    flex-direction: row;
     justify-content: center;
-    -webkit-box-align: center;
     align-items: center;
     font-weight: 500;
     letter-spacing: 0.01em;
@@ -195,15 +265,42 @@
     transition: all 0.3s ease 0s;
     white-space: nowrap;
     background: none;
+    list-style: none;
     border: none;
     border-radius: 0px;
     color: rgb(18, 29, 51);
     padding: 0px;
-    font-size: 0.875rem;
+    font-size: 1rem;
     line-height: 143%;
+    transform: translate(400px, 103px);
+
+    @media screen and (max-width: 1500px) {
+        
+    }
+
+    @media screen and (max-width: 1100px) {
+        
+    }
+    
+
+    @media screen and (max-width: 550px) {
+        
+    }
+
 }
 
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.arrow-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2px;
+}
 
 
 
