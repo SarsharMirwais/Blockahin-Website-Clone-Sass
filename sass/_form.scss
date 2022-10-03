@@ -2,7 +2,7 @@
     height: 100vh;
     max-width: 100%;
     position: relative;
-    
+
 }
 
 
@@ -13,7 +13,6 @@
     margin: 14rem auto 8rem auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     border-radius: 4%;
 
     @media screen and (max-width: 1500px) {
@@ -33,6 +32,7 @@
 .left-elements {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     gap: 20px;
 }
 
@@ -42,7 +42,7 @@
     align-items: center;
     padding-left: 60px;
     margin-top: 34px;
-    
+
     &--1 {
         display: flex;
         border: none;
@@ -51,7 +51,7 @@
         background-color: rgb(243, 208, 243);
         padding: 5px;
     }
-    
+
 
     &--p2 {
         transform: translate(-90px);
@@ -66,81 +66,34 @@
     padding-top: 5rem;
     float: right;
 
+    display: flex;
+    flex-grow: 1;
+    flex-flow: row;
+
 
     &--mobile {
-        height: 84%;
+        height: 90%;
+        max-width: 100%;
         margin-top: 5rem;
-        width: 76%;
-        transform: translateX(172px);
+        position: relative;
 
-        @media screen and (max-width: 1500px) {
-            transform: translateX(161px);
-        }
-
-        @media screen and (max-width: 1100px) {
-            transform: translateX(146px);
-        }
-
-
-        @media screen and (max-width: 768px) {
-            height: 60%;
-            margin-top: 10rem;
-            width: 115%;
-            transform: translateX(-46px);
-        }
-
-        @media screen and (max-width: 550px) {
-            height: 48%;
-            margin-top: 17rem;
-            width: 28rem;
-            transform: translateX(-200px);
-        }
-
-        @media screen and (max-width: 480px) {
-            height: 48%;
-            margin-top: 17rem;
-            width: 28rem;
-            transform: translateX(-268px);
-        }
-
-        @media screen and (max-width: 414px) {
-            height: 50%;
-            margin-top: 9rem;
-            width: 29rem;
-            transform: translateX(-353px);
-        }
     }
+
     &--wallet {
-        height: 85%;
-        width: 45%;
-        z-index: 99;
-        transform: translate(33rem, -58rem);
+        height: 80%;
+        width: 20%;
+        z-index: 1;
+        position: absolute;
+        padding-top: 5rem;
 
-        @media screen and (max-width: 1500px) {
-            transform: translate(33rem, -50rem);
+        @media screen and (max-width: 1200px) {
+            display: none;
         }
 
-        @media screen and (max-width: 1100px) {
-            transform: translate(33rem, -50rem);
-        }
-
-        @media screen and (max-width: 768px) {
-            height: 69%;
-            margin-top: 5rem;
-            width: 76%;
-            transform: translate(-257px, -410px);
-        }
-
-        @media screen and (max-width: 414px) {
-            height: 60%;
-            margin-top: 5rem;
-            width: 66%;
-            transform: translate(-257px, -347px);
-        }
     }
 }
 
-    
+
 
 .order-4 {
     display: flex;
@@ -203,7 +156,7 @@
         color: #840fbe;
         padding-left: 68px;
     }
-    
+
 
     @media screen and (max-width: 550px) {
         display: flex;
@@ -236,8 +189,8 @@
     align-items: flex-start;
     padding-left: 60px;
 
-    
-    
+
+
 
     &--1 {
         color: rgb(132, 15, 190);
@@ -257,18 +210,18 @@
 
         @media screen and (max-width: 768px) {
             background-color: #eeeeee;
-            border: none; 
-            padding: 1rem 6rem 1rem 1rem; 
+            border: none;
+            padding: 1rem 6rem 1rem 1rem;
         }
 
         @media screen and (max-width: 550px) {
             background-color: #eeeeee;
             border: none;
-            padding: 1rem 6rem 1rem 1rem; 
-             
+            padding: 1rem 6rem 1rem 1rem;
+
         }
 
-        
+
     }
 
     &--2 {
@@ -280,7 +233,7 @@
         padding: 2rem 6rem 2rem 1rem;
         transition: color 0.25s ease 0s;
         z-index: 1;
-        cursor: pointer; 
+        cursor: pointer;
         width: 40rem;
         text-align: left;
         background-color: rgb(247, 245, 255);
@@ -391,8 +344,8 @@
         padding-bottom: 28rem;
     }
 
-    
-    
+
+
 
     &--2 {
         font-size: 4rem;
