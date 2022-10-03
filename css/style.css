@@ -83,6 +83,18 @@ body {
     max-width: 100%;
     margin-top: 5rem;
     position: relative; }
+    @media screen and (max-width: 768px) {
+      .wallet-img4--mobile {
+        height: 70%;
+        width: 80%; } }
+    @media screen and (max-width: 600px) {
+      .wallet-img4--mobile {
+        height: 50%;
+        width: 70%;
+        padding-top: 2rem; } }
+    @media screen and (max-width: 550px) {
+      .wallet-img4--mobile {
+        display: none; } }
   .wallet-img4--wallet {
     height: 80%;
     width: 20%;
@@ -709,6 +721,7 @@ body {
 .left-elements3 {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   gap: 20px; }
 
 .wallet-btn3 {
@@ -740,7 +753,9 @@ body {
 
 .wallet-img3 {
   padding-top: 5rem;
-  float: right; }
+  float: right;
+  display: flex;
+  flex-grow: 1; }
   .wallet-img3--mobile {
     height: 80%;
     margin-top: 5rem;
@@ -896,15 +911,22 @@ body {
   font-size: 1.8rem;
   font-weight: 400;
   padding: 2rem; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 900px) {
     .order-divider {
       gap: 4rem; } }
+  @media screen and (max-width: 768px) {
+    .order-divider {
+      gap: 1rem; } }
   @media screen and (max-width: 480px) {
     .order-divider {
       gap: 2rem; } }
   @media screen and (max-width: 414px) {
     .order-divider {
       gap: 1rem; } }
+  @media screen and (max-width: 400px) {
+    .order-divider {
+      gap: 1rem;
+      flex-wrap: wrap; } }
 
 .order-list0,
 .order-list1,
@@ -1126,23 +1148,23 @@ body {
   max-width: 120rem;
   margin: 8rem auto;
   display: flex;
+  gap: 2rem;
   flex-direction: row;
-  justify-content: space-between;
   border-radius: 4%; }
   @media screen and (max-width: 768px) {
     .form2-divider {
       display: flex;
-      flex-direction: row-reverse;
-      justify-content: space-between; } }
+      flex-direction: row-reverse; } }
   @media screen and (max-width: 550px) {
     .form2-divider {
       display: flex;
       flex-direction: row-reverse;
-      justify-content: space-between; } }
+      justify-content: center; } }
 
 .left-elements2 {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   gap: 20px; }
 
 .wallet-btn2 {
@@ -1176,41 +1198,26 @@ body {
     font-size: 2rem; }
 
 .wallet-img2 {
-  padding-top: 5rem; }
+  padding-top: 5rem;
+  flex-grow: 1; }
+  @media screen and (max-width: 550px) {
+    .wallet-img2 {
+      display: none; } }
   .wallet-img2--mobile {
     height: 84%;
     margin-top: 5rem;
     width: 100%; }
+    @media screen and (max-width: 1024px) {
+      .wallet-img2--mobile {
+        height: 64%;
+        width: 90%; } }
+    @media screen and (max-width: 800px) {
+      .wallet-img2--mobile {
+        height: 54%;
+        width: 80%; } }
     @media screen and (max-width: 768px) {
       .wallet-img2--mobile {
-        height: 42%;
-        margin-top: 19rem;
-        width: 26rem;
-        transform: translateX(64px);
-        position: absolute;
-        top: 140rem;
-        right: 7rem;
-        z-index: 2; } }
-    @media screen and (max-width: 550px) {
-      .wallet-img2--mobile {
-        height: 42%;
-        margin-top: 19rem;
-        width: 26rem;
-        transform: translateX(64px);
-        position: absolute;
-        top: 140rem;
-        right: 7rem;
-        z-index: 2; } }
-    @media screen and (max-width: 480px) {
-      .wallet-img2--mobile {
-        height: 48%;
-        margin-top: 17rem;
-        width: 28rem; } }
-    @media screen and (max-width: 414px) {
-      .wallet-img2--mobile {
-        height: 41%;
-        margin-top: 16rem;
-        width: 23rem; } }
+        display: none; } }
 
 .order-5 {
   display: flex;
@@ -1464,15 +1471,6 @@ body {
   display: flex;
   flex-direction: row;
   border-radius: 4%; }
-  @media screen and (max-width: 1500px) {
-    .form-divider {
-      margin: 14rem auto 8rem auto; } }
-  @media screen and (max-width: 1100px) {
-    .form-divider {
-      margin: 14rem auto 8rem auto; } }
-  @media screen and (max-width: 550px) {
-    .form-divider {
-      margin: 14rem auto 8rem auto; } }
 
 .left-elements {
   display: flex;
@@ -1510,6 +1508,18 @@ body {
     max-width: 100%;
     margin-top: 5rem;
     position: relative; }
+    @media screen and (max-width: 768px) {
+      .wallet-img--mobile {
+        height: 70%;
+        width: 80%; } }
+    @media screen and (max-width: 600px) {
+      .wallet-img--mobile {
+        height: 50%;
+        width: 70%;
+        padding-top: 2rem; } }
+    @media screen and (max-width: 550px) {
+      .wallet-img--mobile {
+        display: none; } }
   .wallet-img--wallet {
     height: 80%;
     width: 20%;

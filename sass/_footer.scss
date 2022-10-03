@@ -7,6 +7,8 @@
         max-width: 100%;
     }
 
+    @media screen and (max-width: 550px) {}
+
     @media screen and (max-width: 480px) {
         height: 110vh;
     }
@@ -53,7 +55,7 @@
     }
 
     &--3 {
-        transform: translateX(12px); 
+        transform: translateX(12px);
     }
 }
 
@@ -69,8 +71,12 @@
     font-weight: 400;
     padding: 2rem;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 900px) {
         gap: 4rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        gap: 1rem;
     }
 
     @media screen and (max-width: 480px) {
@@ -79,6 +85,12 @@
 
     @media screen and (max-width: 414px) {
         gap: 1rem;
+
+    }
+
+    @media screen and (max-width: 400px) {
+        gap: 1rem;
+        flex-wrap: wrap;
 
     }
 }
@@ -92,6 +104,7 @@
     flex-direction: column;
     text-align: left;
 }
+
 .a-line {
     background-color: blue;
     color: white;
@@ -134,8 +147,8 @@
     }
 
     @media screen and (max-width: 768px) {
-       padding-left: 73px;
-       padding-top: 13rem; 
+        padding-left: 73px;
+        padding-top: 13rem;
     }
 
     @media screen and (max-width: 480px) {
@@ -152,9 +165,9 @@
     gap: 1rem;
     padding-bottom: 1rem;
     cursor: pointer;
-    
 
-    
+
+
 }
 
 .SelectElement {
@@ -268,11 +281,3 @@
     }
 
 }
-
-
-
-
-
-
-
-
